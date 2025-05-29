@@ -21,6 +21,8 @@ The camera (Canon 5D MkIV DSLR) is controlled via gphoto: http://www.gphoto.org/
 
 ```
 multispectral_panels/
+├── panel 3D model/           # 3D printable model of one panel
+├── panel circuit/            # circuit for 16 3W LEDs
 ├── css/                      # Stylesheets for the web interface
 ├── js/                       # JavaScript files for interactive UI elements
 ├── old/                      # Legacy scripts and backups
