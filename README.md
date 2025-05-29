@@ -1,6 +1,6 @@
 
 
-# Multispectral Panels Control
+# Multispectral panels control
 
 ## Overview
 
@@ -8,7 +8,7 @@ This repository provides a crude php page to control multispectral LED panels us
 The LED driver circuits are switched on and off using two Microchip MCP23017 - i2c 16 input/output port expanders.
 The camera (Canon 5D MkIV DSLR) is controlled via gphoto: http://www.gphoto.org/
 
-* **Spectral Control**: Activate and manage LEDs across various spectral bands, including:
+* **Spectral control**: Activate and manage LEDs across various spectral bands, including:
   * UV : 365nm, 385nm, 405nm
   * Blue: 425nm, 445nm, 460nm
   * Green: 530nm, 570nm
@@ -17,7 +17,7 @@ The camera (Canon 5D MkIV DSLR) is controlled via gphoto: http://www.gphoto.org/
 
 
 
-## Repository Structure
+## Repository structure
 
 ```
 multispectral_panels/
@@ -38,7 +38,7 @@ multispectral_panels/
 └── README.md                 # Project documentation
 ```
 
-## Getting Started
+## Getting started
 
 ### Prerequisites
 * rapsberry pi 3, 4 or 5
@@ -48,25 +48,25 @@ multispectral_panels/
 
 ### Installation
 
-1. **Clone the Repository**:
+1. **Clone the repository**:
 
    ```bash
    git clone https://github.com/Niphargusproject/multispectral_panels.git
    ```
 
-2. **Set Up the Web Interface**:
+2. **Set up the Web interface**:
 
    * Place the repository contents in your web server's root directory.
    * Ensure the server has the necessary permissions to execute PHP scripts.
 
-3. **Configure Python Scripts**:
+3. **Configure python scripts**:
 
    * Install any required Python dependencies (if applicable).
    * Modify the scripts to match your hardware configuration and paths.
 
 ## Usage
 
-* **Web Interface**:
+* **Web interface**:
 
   * Navigate to `http://your_server_address/index.php` in your web browser.
   * Use the interface to control individual spectral bands, initiate photogrammetry sessions, and manage settings.
