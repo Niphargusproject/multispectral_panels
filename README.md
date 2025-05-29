@@ -61,10 +61,6 @@ multispectral_panels/
    * Place the repository contents in your web server's root directory.
    * Ensure the server has the necessary permissions to execute PHP scripts.
 
-3. **Configure python scripts**:
-
-   * Install any required Python dependencies (if applicable).
-   * Modify the scripts to match your hardware configuration and paths.
 
 ## Usage
 
