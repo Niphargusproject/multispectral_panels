@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>3D spectral</title>
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">	
+	<script src="js/jquery-2.2.2.min.js"></script>	
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+
+<script type="text/javascript">
+      
+function uva() {
+    $.get("turn.php");
+    return false;
+}
+function uvb() {
+    $.get("uv2.php");
+    return false;
+}
+function violet() {
+    $.get("violet.php");
+    return false;
+}
+function blue() {
+    $.get("blue.php");
+    return false;
+}
+function green() {
+    $.get("green.php");
+    return false;
+}
+function yellow() {
+    $.get("yellow.php");
+    return false;
+}
+function red() {
+    $.get("red.php");
+    return false;
+}
+function infrared() {
+    $.get("infrared.php");
+    return false;
+}
+function off() {
+    $.get("off.php");
+    return false;
+}
+</script>
+<body>
+<div align="center">
+<P>3D spectral LEDS :</p>
+<button onclick="uva()" style="background-color: #ffffff;">365nm</button>
+<button onclick="uvb()" style="background-color: #eeccff;">385nm</button>
+<button onclick="violet()" style="background-color: #dd99ff;">405nm</button>
+<button onclick="blue()" style="background-color: #99ccff;">470nm</button>
+<button onclick="green()" style="background-color: #99ff99;">530nm</button>
+<button onclick="yellow()" style="background-color: #ffff99;">Yellow</button>
+<button onclick="red()" style="background-color: #ff9999;">630nm</button>
+<button onclick="infrared()" style="background-color: #cccccc;">930nm</button>
+  
+</div> 
+<br><br>
+<div align="center">
+<button onclick="off()" style="background-color: white;">LED OFF</button>
+ 
+</body>
+</html>

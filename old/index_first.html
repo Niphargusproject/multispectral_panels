@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>3D spectral control test</title>
+	<link href="css/ui-lightness/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+	<script src="js/jquery-1.8.3.js"></script>
+	<script src="js/jquery-ui-1.9.2.custom.js"></script>
+	<script>
+	$(function() {
+		
+		$( "#accordion" ).accordion();
+		
+
+		
+
+		$( "#button1" ).button();
+		$( "#button2" ).button();
+		$( "#button3" ).button();
+		$( "#button4" ).button();
+		$( "#button5" ).button();
+		$( "#button6" ).button();
+		$( "#button7" ).button();
+		$( "#button8" ).button();
+		$( "#button9" ).button();
+		$( "#button10" ).button();
+
+		$( "#radioset" ).buttonset();
+		
+
+		
+
+	});
+	</script>
+	<style>
+	body{
+		font: 100% "Trebuchet MS", sans-serif;
+		margin: 50px
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	</style>
+</head>
+
+<script type="text/javascript">
+      
+function uva() {
+
+	$.get("uv1.php");
+    return false;
+}
+function uvb() {
+    $.get("uv2.php");
+    return false;
+}
+function violet() {
+	$.get("violet.php");
+    return false;
+}
+function blue() {
+    $.get("blue.php");
+    return false;
+}
+function green() {
+    $.get("green.php");
+    return false;
+}
+function yellow() {
+	$.get("yellow.php");
+    return false;
+}
+function red() {
+    $.get("red.php");
+    return false;
+}
+function infrared() {
+    $.get("infrared.php");
+    return false;
+}
+function off() {
+    $.get("off.php");
+    return false;
+}
+
+function rgb() {
+	$.get("red.php");
+    $.get("blue.php");
+    $.get("green.php");
+  
+    return false;
+}
+</script>
+
+<body>
+
+
+
+
+<P align="center">
+<h2>3D spectral LEDS :</h2>
+<button id="button1" onclick="uva()" style="color: #888888">365nm</button> <button id="button2" onclick="uvb()" style="color: #888888">385nm</button><br><br>
+<button id="button3" onclick="violet()" style="color: purple">405nm</button> <button id="button4" onclick="blue()" style="color: blue">450nm</button><br><br>
+<button id="button5" onclick="green()" style="color: green">530nm</button> <button id="button6" onclick="yellow()" style="color: orange">600nm</button><br><br>
+<button id="button7" onclick="red()" style="color: red">630nm</button> <button id="button8" onclick="infrared()" style="color: #555555">940nm</button><br><br>
+  
+
+<br>
+<button id="button9" onclick="rgb()" style="background-color: white;">RGB LEDS</button>
+<br><br>
+<button id="button10" onclick="off()" style="background-color: white;">LED OFF</button>
+</p>
+
+
+
+</body>
+</html>
