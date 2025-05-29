@@ -4,9 +4,9 @@
 
 ## Overview
 
-This repository provides a crue  php page to control multispectral LED panels.
-
-## Features
+This repository provides a crude php page to control multispectral LED panels using a respberry pi. 
+The LED driver circuits are switched on and off using two Microchip MCP23017 - i2c 16 input/output port expanders.
+The camera (Canon 5D MkIV DSLR) is controlled via gphoto: http://www.gphoto.org/
 
 * **Spectral Control**: Activate and manage LEDs across various spectral bands, including:
   * UV : 365nm, 385nm, 405nm
@@ -15,11 +15,7 @@ This repository provides a crue  php page to control multispectral LED panels.
   * Red: 620nm, 670nm
   * Infrared: 730nm, 850nm, 950nm
 
-* **Web Interface**: User-friendly PHP-based web interface for real-time control and monitoring.
 
-* **Python Scripts**: Automation scripts for batch operations and integration with other systems.
-
-* **Photogrammetry Support**: Tools to assist in capturing and processing multispectral images for photogrammetric analysis.
 
 ## Repository Structure
 
@@ -45,10 +41,10 @@ multispectral_panels/
 ## Getting Started
 
 ### Prerequisites
-
+* rapsberry pi 3, 4 or 5
 * A web server with PHP support (e.g., Apache, Nginx)
 * Python 3.x installed on the system
-* Hardware setup with multispectral LED panels connected and configured([iridesense.tech][1])
+* i2ctools and gphoto 
 
 ### Installation
 
@@ -73,18 +69,11 @@ multispectral_panels/
 * **Web Interface**:
 
   * Navigate to `http://your_server_address/index.php` in your web browser.
-  * Use the interface to control individual spectral bands, initiate photogrammetry sessions, and manage settings.([slideplayer.com][2])
-
-* **Python Scripts**:
-
+  * Use the interface to control individual spectral bands, initiate photogrammetry sessions, and manage settings.
   * Execute scripts like `leds_panels.py` or `photogram_panels.py` for automated operations.
   * Integrate these scripts into larger workflows or scheduling systems as needed.
 
-## Contributing
 
-Contributions are welcome! If you have suggestions, bug reports, or enhancements, please open an issue or submit a pull request.([tehranconvention.org][3])
-
-## License
 
 This project is licensed under the [GNU General Public License v3.0](LICENSE)
 
