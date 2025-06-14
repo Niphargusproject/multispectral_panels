@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository provides a crude php page to control multispectral LED panels using a respberry pi. 
+This repository provides a crude php page to control multispectral LED panels using a raspberry pi. 
 The LED driver circuits are switched on and off using two Microchip MCP23017 - i2c 16 input/output port expanders.
 The camera (Canon 5D MkIV DSLR) is controlled via gphoto: http://www.gphoto.org/
 
